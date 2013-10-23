@@ -1,4 +1,9 @@
 <?php
+interface AnimalShowInfo
+{
+    public function showInfo();
+}
+
 abstract class Animal
 {
     private $name;
@@ -31,7 +36,38 @@ abstract class Animal
     }
 }
 
-class Ptiz extends Animal
+abstract class AbstractMammals extends Animal
+{
+    abstract public function milk();
+}
+class Mammals extends AbstractMammals implements AnimalShowInfo
+{
+    public function test()
+    {
+        $this->setName("ShpitS");
+        $this->setWeight(222);
+    }
+    public function showInfo()
+    {
+        echo $this->getName();
+        echo $this->getWeight();
+    }
+    public function milk()
+    {
+
+    }
+}
+
+class Artiodactyls extends Animal
+{
+    public function test()
+    {
+        $this->setName("ShpitS");
+        $this->setWeight(222);
+    }
+}
+
+class Birds extends Animal
 {
     public function test()
     {
