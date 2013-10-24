@@ -9,6 +9,9 @@
 spl_autoload_register('autoloadModel');
 function autoloadModel($className)
 {
-    $fileName = $className.'.php';
-    include 'AnimalClass/'.$fileName;
+    $filename = 'AnimalClass/'.$className.'.php';
+    if (is_readable($filename)) {
+        require $filename;
+    }
+   // include 'AnimalClass/'.$fileName;
 }
