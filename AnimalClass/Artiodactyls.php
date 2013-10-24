@@ -18,8 +18,8 @@ class Artiodactyls extends AbstractArtiodactyls implements AnimalShowInfo
 
     public function showInfo()
     {
-        echo $this->getName()."\n";
-        echo $this->getWeight()."кг.\n";
-        echo $this->getAge()."р.\n";
+        echo $this->getName()."<br>";
+        echo $this->getWeight()."KG.<br>";
+        echo $this->getAge()."Year.<br>";
     }
 }
