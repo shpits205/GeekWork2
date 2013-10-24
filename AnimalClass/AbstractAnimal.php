@@ -12,7 +12,7 @@ abstract class AbstractAnimal
     private $name;
     private $weight;
     private $age;
-    abstract public function setInfoAnimal();
+    abstract public function setInfoAnimal($name,$weight,$age);
     public   function setName($name)
     {
         $this->name = $name;

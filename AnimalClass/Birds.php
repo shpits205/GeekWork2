@@ -9,15 +9,17 @@
 
 class Birds extends AbstractBirds implements AnimalShowInfo
 {
-    public function setInfoAnimal()
+    public function setInfoAnimal($name,$weigh,$age)
     {
-        $this->setName("ShpitS");
-        $this->setWeight(222);
+        $this->setName($name);
+        $this->setWeight($weigh);
+        $this->setAge($age);
     }
 
     public function showInfo()
     {
-        echo $this->getName();
-        echo $this->getWeight();
+        echo $this->getName()."\n";
+        echo $this->getWeight()."кг.\n";
+        echo $this->getAge()."р.\n";
     }
 }
