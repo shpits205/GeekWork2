@@ -9,7 +9,7 @@
 
 class Birds extends AbstractBirds implements AnimalShowInfo
 {
-    public function setInfoAnimal($name,$weigh,$age)
+    public function setInfoAnimal($name, $weigh, $age)
     {
         $this->setName($name);
         $this->setWeight($weigh);
@@ -18,8 +18,8 @@ class Birds extends AbstractBirds implements AnimalShowInfo
 
     public function showInfo()
     {
-        echo $this->getName()."<br>";
-        echo $this->getWeight()."KG.<br>";
-        echo $this->getAge()."Year.<br>";
+        echo $this->getName() . "<br>";
+        echo $this->getWeight() . "KG.<br>";
+        echo $this->getAge() . "Year.<br>";
     }
 }

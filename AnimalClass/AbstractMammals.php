@@ -11,12 +11,12 @@ abstract class AbstractMammals extends AbstractAnimal
 {
     private $presence_of_horns;
 
-    public  function setHorns($horns)
+    public function setHorns($horns)
     {
         $this->presence_of_horns = $horns;
     }
 
-    public  function getHorns()
+    public function getHorns()
     {
         return $this->presence_of_horns;
     }

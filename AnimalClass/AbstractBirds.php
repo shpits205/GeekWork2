@@ -11,22 +11,23 @@ abstract class AbstractBirds extends AbstractAnimal
 {
     private $pery_color;
     private $fly;
-    public  function setHorns($color)
+
+    public function setHorns($color)
     {
         $this->pery_color = $color;
     }
 
-    public  function getHorns()
+    public function getHorns()
     {
         return $this->pery_color;
     }
 
-    public  function setFly($fly)
+    public function setFly($fly)
     {
         $this->fly = $fly;
     }
 
-    public  function getfly()
+    public function getfly()
     {
         return $this->fly;
     }

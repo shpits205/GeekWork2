@@ -11,12 +11,12 @@ abstract class AbstractArtiodactyls extends AbstractAnimal
 {
     private $hair_color;
 
-    public  function setHorns($color)
+    public function setHorns($color)
     {
         $this->hair_color = $color;
     }
 
-    public  function getHorns()
+    public function getHorns()
     {
         return $this->hair_color;
     }

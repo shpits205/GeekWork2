@@ -9,18 +9,20 @@
 
 class Mammals extends AbstractMammals implements AnimalShowInfo
 {
-    public function setInfoAnimal($name,$weigh,$age)
+    public function setInfoAnimal($name, $weigh, $age)
     {
         $this->setName($name);
         $this->setWeight($weigh);
         $this->setAge($age);
     }
+
     public function showInfo()
     {
-        echo $this->getName()."<br>";
-        echo $this->getWeight()."KG.<br>";
-        echo $this->getAge()."Year.<br>";
+        echo $this->getName() . "<br>";
+        echo $this->getWeight() . "KG.<br>";
+        echo $this->getAge() . "Year.<br>";
     }
+
     public function milk()
     {
         echo "Ooooh yes! <br>";

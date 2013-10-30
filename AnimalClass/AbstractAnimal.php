@@ -12,29 +12,37 @@ abstract class AbstractAnimal
     private $name;
     private $weight;
     private $age;
-    abstract public function setInfoAnimal($name,$weight,$age);
-    public   function setName($name)
+
+    abstract public function setInfoAnimal($name, $weight, $age);
+
+    public function setName($name)
     {
         $this->name = $name;
     }
-    public  function setWeight($weight)
+
+    public function setWeight($weight)
     {
         $this->weight = $weight;
     }
-    public  function setAge($age)
+
+    public function setAge($age)
     {
         $this->age = $age;
     }
-    public   function getName()
+
+    public function getName()
     {
         return $this->name;
     }
-    public  function getWeight()
+
+    public function getWeight()
     {
         return $this->weight;
     }
-    public  function getAge()
+
+    public function getAge()
     {
         return $this->age;
     }
+
 }
